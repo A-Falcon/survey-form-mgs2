@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel='stylesheet' href='styles.css'>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); </style>
+</head>
+<body>
+  
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="">MGS: Sons of Liberty Survey</h1>
+      <p id="description">Tell us about your gaming experience</p>
+    </header>
+   
+    <form id="survey-form">
+      <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+     <label id="email-label" for="email">Email</label>
+      <input id="email" class="form-control" type="email" name="email" placeholder="Enter your Email" required>
+      </div>
+      <div class="form-group">
+    <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input id="number" class="form-control" type="number" name="age" placeholder="age" min="10" max="99">
+      </div>
+      <div class="form-group">
+        <label>Which option best describes your game style?</label>
+        <select id="dropdown" class="form-control" required>
+          <option disable selected value>select option</option>
+          <option value="not much">not much - 30 mins to an hour</option>
+          <option value="casual">casual - 1-3 hours</option>
+          <option value="gamer">gamer - 3-6</option>
+          <option value="i-stream">I stream - 6-12 hours</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Would you recommend Sons of Liberty to a friend?</label>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" >Definitely</input>
+        </label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" >Maybe</input>
+        </label>
+        <label>
+          <input name="user-recommend"  value="not sure" type="radio" class="input-radio">Not sure</input>
+        </label>
+      </div>
+<div class="form-group">
+  <label>What is your favorite feature of Sons of Liberty?</label>
+  <select id="most-like" name="most-like" class="form-control" required>
+          <option disable selected value>select</option>
+          <option value="challenges">Stealth and Tactics</option>
+          <option value="projects">Planter Mission</option>
+          <option value="community">Tanker Mission</option>
+          <option value="openSource">Continuity within the series</option>
+        </select>
+</div>
+<div class="form-group">
+  <label>What are your favorite typoes of games?<span class="clue">(Check all that apply)</span></label>
+  <label>
+    <input name="perfer" type="checkbox" value="FPS" class="input-checkbox">
+    FPS
+  </label>
+  <label>
+    <input name="perfer" type="checkbox" value="MOBAS" class="input-checkbox">
+    MOBAS
+  </label>
+  <label>
+    <input name="perfer" type="checkbox" value="single-player" class="input-checkbox">
+    single-player
+  </label>
+  <label>
+    <input name="perfer" type="checkbox" value="co-op" class="input-checkbox">
+    co-op
+  </label>
+  <label>
+    <input name="perfer" type="checkbox" value="MMORPG" class="input-checkbox">
+    MMORPG
+  </label>
+  <label>
+</div>
+<div class="form-group">
+  <label>Any comments or suggestions?</label>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+</div>
+<div class="form-group button">
+  <button id="submit" type="submit" class="submit-button">Submit</button>
+</div>
+  </form>
+ </div>
+</body>
+</html>
